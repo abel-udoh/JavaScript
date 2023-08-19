@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cart Quantity</title>
+
+    <style>
+        body{
+
+            background-color: rgb(53, 1, 59);
+        }
+
+        button{
+
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 10%;
+            height: 40px;
+            font-size: 16px;
+            margin: 5px 5px 5px 5px;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="
+        console.log(`Cart Quantity: ${cartQuantity}`);">Show Quantity</button>
+
+    <button onclick="
+        cartQuantity ++;
+        console.log(`Cart Quantity: ${cartQuantity}`);">Add To Cart</button>
+
+    <button onclick="
+        cartQuantity += 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+2</button>
+
+    <button onclick="
+        cartQuantity += 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+3</button>
+
+    <button onclick="
+        cartQuantity += 4;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+4
+    </button>
+
+
+    <button onclick="
+        cartQuantity += 5;
+        console.log(`Cart Quantity: ${cartQuantity}`);">+5
+    </button>
+
+    <button onclick="
+        cartQuantity = 0;
+        console.log('Cart was Reset')
+        console.log(`Cart Quantity: ${cartQuantity}`);">Reset Cart
+    </button>
+
+    <button onclick="
+        cartQuantity -= 1;
+        console.log(`Cart Quantity: ${cartQuantity}`)">Remove From Cart
+    </button>
+
+    <button onclick="
+        cartQuantity -= 2;
+        console.log(`Cart Quantity: ${cartQuantity}`);">-2
+    </button>
+
+    <button onclick="
+        cartQuantity -= 3;
+        console.log(`Cart Quantity: ${cartQuantity}`);">-3
+    </button>
+
+
+    <script>
+        let cartQuantity = 0;
+    </script>
+</body>
+</html>
